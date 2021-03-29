@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Fortaleza</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Palmeiras</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fluminense</ion-label>
+    </ion-item>
+  </ion-list>
+  <h3>Lista de Componentes</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome:</ion-label>
+      <ion-input type="email" placeholder="Nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Instalado?</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Instalado?</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Selecionar?</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://yt3.ggpht.com/yti/ANoDKi6BBnuGigYH0agWQv8tPdn_IFDfwwkSHLaeNp057NY=s160-c-k-c0x00ffffff-no-rj" alt="avatar">
+      </ion-avatar>
+      <ion-label>
+        <h2>Deivson Bezerra</h2>
+        <h3>Desenvolvedor Jr.</h3>
+        <p>Torcedor do FEC e aficcionado por tecnologias</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>A direita</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>A esquerda</ion-label>
+      </ion-item>
+      <ion-item-options side="end" >
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let time of times">{{time}}</ion-item>
+  </ion-list>
+  
+</ion-content>

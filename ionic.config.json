@@ -1,5 +1,7 @@
 {
   "name": "meuAppDoZero",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

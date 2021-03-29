@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Chip</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-chip *ngFor="let cat of categorias" color="danger">
+  <ion-icon name="image"></ion-icon>
+  <ion-label (click)='contador()'>{{cat}}</ion-label>
+</ion-chip>
+
+<ion-item>
+  <ion-icon name="heart" color="danger"></ion-icon>
+  <ion-label>Curtidas</ion-label>
+  <ion-badge slot="end">{{cont}}</ion-badge>
+</ion-item>
+
+
+<ion-chip color="primary">
+  <ion-avatar>
+    <img src="https://logodownload.org/wp-content/uploads/2018/08/fortaleza-ec-logo-escudo-9.png" alt="logo_fec">
+  </ion-avatar>
+  <ion-label>Fortaleza Esporte Clube</ion-label>
+</ion-chip>
+
+
+<ion-chip color="primary">
+  <ion-avatar >
+    <img src="https://icons.iconarchive.com/icons/giannis-zographos/south-american-football-club/72/Palmeiras-icon.png" alt="logo_fec">
+  </ion-avatar>
+  <ion-label>Sociedade Esportiva Palmeiras</ion-label>
+</ion-chip>
+
+
+
+
+</ion-content>

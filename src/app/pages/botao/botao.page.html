@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Botões</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-button color="warning">Botão 1</ion-button>
+<ion-button color="secondary" href="https://ionicframework.com/docs/api/button">com hiperlink</ion-button>
+<h1>Temas</h1>
+<ion-button color="primary">Primary</ion-button>
+<ion-button color="secondary">Secondary</ion-button>
+<ion-button color="tertiary">Tertiary</ion-button>
+<ion-button color="success">Success</ion-button>
+<ion-button color="warning">Warning</ion-button>
+<ion-button color="danger">Danger</ion-button>
+<ion-button color="light">Light</ion-button>
+<ion-button color="medium">Medium</ion-button>
+<ion-button color="dark">Dark</ion-button>
+<h1>Expand</h1>
+<ion-button color="warning" expand="full">Botão 1</ion-button>
+<ion-button color="tertiary" expand="block">Botão 1</ion-button>
+<h1>fill</h1>
+<ion-button fill="outline" color="tertiary">Sem preencimento</ion-button>
+<ion-button shape="rounded" color="tertiary">arredondado</ion-button>
+<h1>com icone</h1>
+<ion-button shape="rounded" color="tertiary">
+  <ion-icon slot="start" name="star"></ion-icon>
+  Favoritos
+</ion-button>
+<ion-button shape="rounded" color="tertiary">
+  <ion-icon slot="icon-only" name="bug"></ion-icon>
+  <ion-icon slot="icon-only" name="bug-outline"></ion-icon>
+</ion-button>
+<h2>Tamanhos</h2>
+<ion-button size="large">arredondado</ion-button>
+<ion-button size="small">arredondado</ion-button>
+<ion-button size="medium">arredondado</ion-button>
+
+<ion-button expand="block" color="danger" (click)='showPageHome()'>Botão 1</ion-button>
+
+</ion-content>
