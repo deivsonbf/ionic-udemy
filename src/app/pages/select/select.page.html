@@ -10,4 +10,71 @@
 
 <ion-content>
 
+  <ion-list>
+    <ion-list-header>Select Simples</ion-list-header>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="Selecione">
+        <ion-select-option value="M">Masculino</ion-select-option>
+        <ion-select-option value="F">Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item placeholder= 'Selecione'>
+      <ion-label>Cor</ion-label>
+      <ion-select placeholder= 'Selecione' value="Azul" okText="Selecionar" cancelText=Cancelar>
+        <ion-select-option value="Branco">Branco</ion-select-option>
+        <ion-select-option value="Azul">Azul</ion-select-option>
+        <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item placeholder= 'Selecione'>
+      <ion-label>Cor</ion-label>
+      <ion-select multiple="true" placeholder= 'Selecione' value="Azul" okText="Selecionar" cancelText=Cancelar>
+        <ion-select-option value="Branco">Branco</ion-select-option>
+        <ion-select-option value="Azul">Azul</ion-select-option>
+        <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+<ion-list>
+  <ion-item placeholder= 'Selecione'>
+    <ion-label>Cor</ion-label>
+    <ion-select [interfaceOptions]="customModalOptions" interface="modal" placeholder= 'Selecione' okText="Selecionar" cancelText=Cancelar>
+      <ion-select-option value="Branco">Branco</ion-select-option>
+      <ion-select-option value="Azul">Azul</ion-select-option>
+      <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item placeholder= 'Selecione'>
+    <ion-label>Cor</ion-label>
+    <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder= 'Selecione' okText="Selecionar" cancelText=Cancelar>
+      <ion-select-option value="Branco">Branco</ion-select-option>
+      <ion-select-option value="Azul">Azul</ion-select-option>
+      <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item placeholder= 'Selecione'>
+    <ion-label>Popover</ion-label>
+    <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder= 'Selecione' okText="Selecionar" cancelText=Cancelar>
+      <ion-select-option value="Branco">Branco</ion-select-option>
+      <ion-select-option value="Azul">Azul</ion-select-option>
+      <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item placeholder= 'Selecione'>
+    <ion-label>Popover</ion-label>
+    <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder= 'Selecione' okText="Selecionar" cancelText=Cancelar>
+      <ion-select-option value="Branco">Branco</ion-select-option>
+      <ion-select-option value="Azul">Azul</ion-select-option>
+      <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+
+
+
 </ion-content>
