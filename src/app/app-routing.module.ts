@@ -142,6 +142,10 @@ const routes: Routes = [
   {
     path: 'camera',
     loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'api',
+    loadChildren: () => import('./pages/api/api.module').then( m => m.ApiPageModule)
   }
 ];
 

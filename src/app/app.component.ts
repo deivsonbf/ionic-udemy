@@ -8,8 +8,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Componentes Visuais', url: 'componentes-visuais', icon: 'apps' },
     { title: 'Componentes Nativos', url: 'componentes-nativos', icon: 'apps' },
+    { title: 'API Externa', url: 'api', icon: 'apps' }
   ];
-  
+
   public labels = ['Familia', 'Amigos', 'Notas', 'Trabalho', 'Viagem', 'Lembretes'];
   constructor() { }
 }

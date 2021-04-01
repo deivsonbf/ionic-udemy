@@ -42,7 +42,8 @@ export class ComponentesVisuaisPage implements OnInit {
       { title: 'Popover', url: 'popover', icon: 'construct' },
       { title: 'Radio', url: 'radio', icon: 'construct' },
       { title: 'Animacao', url: 'animacao', icon: 'construct' },
-      { title: 'Minha Página', url: 'mypage', icon: 'avatar' }
+      { title: 'Minha Página', url: 'mypage', icon: 'avatar' },
+      { title: 'API', url: 'api', icon: 'construct' }
     ]
 
   }

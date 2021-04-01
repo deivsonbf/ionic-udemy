@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>API Externa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <ion-label>CEP:</ion-label>
+        <ion-input [(ngModel)]="cep" type="number" placeholder="informe o cep"></ion-input>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button (click)="consultaCep()">Pesquisar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="container">
+    <div class="wrapper-cep">
+      <h3>Exibindo resultados</h3>
+      <ion-item>
+        <ion-label>Cep:</ion-label>
+        <p>{{resultado.cep}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label>Logradouro:</ion-label>
+        <p>{{resultado.logradouro}}</p>
+      </ion-item>
+    </div>
+  </div>
+
+</ion-content>
